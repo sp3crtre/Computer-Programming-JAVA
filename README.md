@@ -325,7 +325,14 @@ public class Main {
 <hr>
 
 <h1>Pre-Finals</h1>
+<p>During the programming final exam, my professor challenged us to create and solve our own problems in order to test our capabilities and to demonstrate that we have learned enough to move on to more advanced programming lessons. I accepted this challenge and worked to solve the problem independently</p>
 
+<p>IF…..ELSE STATEMENT
+PROBLEM:
+Anna forgot to bring a calculator for exam day and didn’t know where she could borrow a calculator and
+the exam will be after 10 minutes. Write a program arithmetic calculator using Addition (+), Subtraction
+(-), Multiplication (x), and Division (%) using the reversed keyword of java if, else if, and else that will
+calculate the sum of two numbers.</p>
 ```
 //Activity 1.1
 //if, else if, else statement
@@ -391,7 +398,11 @@ class main {
 }
 
 ```
-
+<h2>WHILE LOOP PROBLEM:</h2>
+<p>Joseph wants to play a game of paper, scissors, and stone, but he doesn&#39;t have any friends to play the
+game. He feels bored and sad now because he can&#39;t play that game. Write a program that could
+automate paper, scissors, and stone so joseph plays himself. Using the reserved keyword &quot;while loop&quot; to
+keep the game running until joseph quits playing.</p>
 ```
 import java.util.*;
 
@@ -488,7 +499,11 @@ class main2 {
     }
 }
 ```
-
+<h2>SWITCH CASE PROBLEM:</h2>
+<p>The class president loves reading bible verses, riddles, quotes, and advice every day, but she is tired of
+getting those books to read, she wants to make an automation that could randomly generate the
+content on his books in the bible, advice, Tagalog riddles and quotes, but she doesn’t know how to that.
+Let’s help our class president to do his task by writing a program that could help her.</p>
 ```
 import java.util.Scanner;
 
@@ -597,7 +612,8 @@ class main3
 }
   
 ```
-
+<h2>FOR LOOP PROBLEM:</h2>
+<p>Write a program to print even and odd numbers Using for loop.</p>
 ```
 import java.util.Scanner;
 
@@ -631,7 +647,16 @@ class main4 {
     }
 }
 ```
-
+<h2>Nested if Statement PROBLEM:</h2>
+<p>The company owner attempted to log in to the admin panel on the company&#39;s website link was not
+found because of misconfiguration to the website. The company boss tries to communicate with the IT
+department to find a solution to this problem no one responds to him because the IT staff is on
+vacation. He wants to check the increasing sales of products in October and the presentation is
+tomorrow morning he needs to finish it as soon as possible. Write a program as an alternative admin
+portal to the company website, allowing us to log in to our boss to log in to his account and track sales
+growth. Assume it is connected to Secure Socket Shell (SSH) using the window command prompt
+terminal as an admin portal and will redirect to the admin dashboard so, our boss would see the
+increasing sales and status.</p>
 ```
 import java.util.Scanner;
 
@@ -682,7 +707,10 @@ class main5 {
     }
 }
 ```
-
+<h2>WHILE LOOP PROBLEM:</h2>
+<p>Create a guessing game, give it a name, and use a do-while loop to guess my number. In this game,
+every wrong guess has the potential of 3 lifelines, which reduces the life expectancy and if the life
+exceeds zero it&#39;s game over.</p>
 ```
 import java.util.Scanner;
 
