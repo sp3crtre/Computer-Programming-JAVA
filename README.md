@@ -1,3 +1,336 @@
 # Java programming activities to school
 
 <p>I wrote this code as part of my computer programming major in a Bachelor of Science in Information Technology program, and I uploaded it to my GitHub repository to help other IT students or anyone else who wants to learn programming. This code represents the activities I completed in my programming course during the first semester, including the preliminary, midterm, and final exams.</p>
+
+
+
+<p>1. Comparing Answers
+
+by CodeChum Admin
+
+Finally, the exam is over! I think I did quite well, but I’m not very confident with my answer for number 10. I need to verify my answer.
+
+
+Hey, you! Yeah, you, what’s your answer for number 10? Is it A, B, C, D, or E?
+
+
+Inputs
+
+1. Answer for number 10
+
+This is a character value which will be either A, B, C, D, or E.
+
+
+Sample Output
+
+Enter your answer for number 10: A
+Oh, my answer is A as well</p>
+
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("Enter your answer for number 10: ");
+        char input = keyboard.next().charAt(0);
+        
+        System.out.print("Oh, my answer is " + input + " as well");
+    }
+}
+
+```
+
+<hr/>
+
+<p>2. John's Birthday
+
+by CodeChum Admin
+
+It’s John’s birthday, so Cody decided to buy John a cute little pet. He has to ask John which animal he likes though so have John input either "dog", "cat", or "eagle" then print out his choice.
+
+
+Inputs
+
+1. The animal John likes
+
+
+Sample Output
+
+Enter the animal John likes: dog
+dog</p>
+
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("Enter the animal John likes: ");
+        String choice = keyboard.nextLine();
+
+        System.out.print(choice);
+    }
+}
+```
+
+<hr/>
+
+<p>3. A Meter for Cody
+
+by CodeChum Admin
+
+Cody has n feet worth of wooden sticks. The problem is, Cody wasn’t designed to read measurements done in feet. Cody has to convert this into meters and read it that way instead. One foot is equivalent to 0.305 meters. Print the converted unit.
+
+
+Inputs
+
+1. Feet worth of wooden sticks
+
+6.5
+
+Since this is a measurement, this can be a decimal value
+
+
+Sample Output
+
+Enter measurement in feet: 6.5
+Equivalent meters = 1.98
+
+Score: 13/13</p>
+
+```
+import java.util.*;
+import java.text.*;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		final double metersPerFoot = 0.305;
+
+		System.out.print("Enter measurement in feet: ");
+		double feet = input.nextDouble();
+
+		double meters = feet * metersPerFoot;
+        DecimalFormat df = new DecimalFormat("0.00");
+        String meterFormated = df.format(meters);
+
+		System.out.println("Equivalent meters = " + meterFormated);
+	}
+}
+```
+
+<hr/>
+
+<p>4. Cody the Berserk
+
+by CodeChum Admin
+
+Cody had a hard time saving The Programmer from the Hydra, so he decided to call his friends to help him cut off the heads together. This was brilliant because then the number of heads he has to cut would be far less than if he was all alone. For example, if the Hydra had 10 heads and he called 5 friends then they would each cut 2 heads. This presented a problem, however, if the Hydra had 11 heads then that meant one of them had to cut 3 heads.
+
+
+Input the number of friends Cody has to call and the number of heads the Hydra currently has and then print the minimum number of heads each one of them has to cut.
+
+
+Inputs
+
+1. Number of friends
+
+
+2. Number of heads
+
+
+Sample Output
+
+Enter the number of friends: 4
+Enter the number of heads: 12
+Minimum heads to cut per friend = 3
+
+Score: 12/12
+</p>
+
+```
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("Enter the number of friends: ");
+        int friends = keyboard.nextInt();
+        
+        System.out.print("Enter the number of heads: ");
+        int heads = keyboard.nextInt();
+        
+        int answer = Math.floorDiv(heads, friends);
+
+        System.out.println("Minimum heads to cut per friend = " + answer);
+    }
+}
+```
+
+<hr/>
+
+1. Midterm_Activity2_No1
+
+by Rozaida Tuazon
+
+Write a program that does the following:
+
+a. Prompts the user to input five decimal numbers
+
+b. Prints the five decimal numbers
+
+c. Converts each decimal number to the nearest integer
+
+d. Adds the five integers
+
+e. Prints the sum and average of the five integers
+
+```
+/**
+ * Write a program that does the following:
+ * a. Prompts the user to input five decimal numbers
+ * b. Prints the five decimal numbers
+ * c. Converts each decimal number to the nearest integer
+ * d. Adds the five integers
+ * e. Prints the sum and average of the five integers
+ * 
+ * Algorithm
+ * 
+ * 1. Declare a, b, c, d, e to get the user input
+ * 2. Converting each decimal place to the nearest integer using round off
+ * 3. Calculating the sum of 5 decimal numbers
+ * 4. Round off the sum of 5 decimal numbers
+ * 5. Converting sum of 5 decimal place(double) to integer 
+ * 6. Divide the sum of 5 decimal place to 5 to get the averageResult
+ * 7. Display the resutl
+**/
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        //Prompts the user to input five decimal numbers
+        System.out.println("Input five decimal numbers");
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+        double d = sc.nextDouble();
+        double e = sc.nextDouble();
+
+        //Each decimal place converted to the nearest integer.
+        final int numb1 = (int) Math.round(a * 100) / 100;
+        final int numb2 = (int) Math.round(b * 100) / 100;
+        final int numb3 = (int) Math.round(c * 100) / 100;
+        final int numb4 = (int) Math.round(d * 100) / 100;
+        final int numb5 = (int) Math.round(e * 100) / 100;
+
+        //Add the five integers to get the sum
+        final double sum = numb1 + numb2 + numb3 + numb4 + numb5;
+
+        //Rounding off the sum to the nearest integer
+        final double average =  Math.round(sum);
+
+        //divide the sum of 5 decimal numbers to 5 to get the averageResult
+        final double averageResult = (average) / 5;
+        //Converting doubles to integers
+        final int result = (int) Math.round(sum);
+        
+        //Display the result
+        System.out.println(a);
+        System.out.println(b);
+        System.out.printf("%.2f", c);
+        System.out.print("\n");
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println("");
+        System.out.println("You input " + numb1 + "," + numb2 + "," + numb3 + "," + numb4 + " and " + numb5);
+        System.out.println("The sum of 5 integers is " + result + " and the average is " + averageResult + ".");
+
+        sc.close();
+
+    }
+
+}
+```
+
+<hr/>
+
+2. Midterm_Activity2_No2
+
+by Rozaida Tuazon
+
+A milk carton can hold 3.78 liters of milk. Each morning, a dairy farm ships cartons of milk to a local grocery store. The cost of producing one liter of milk is $0.38, and the profit of each carton of milk is $0.27.
+
+Write a program that does the following:
+
+a. Prompts the user to enter the total amount of milk produced in the morning
+
+b. Outputs the number of milk cartons needed to hold milk (Round your answer to the nearest integer.)
+
+c. Outputs the cost of producing milk
+
+d. Outputs the profit for producing milk
+
+
+```
+/**
+ * A milk carton can hold 3.78 liters of milk. Each morning, a dairy farm ships cartons of milk to a local grocery store. 
+ * The cost of producing one liter of milk is $0.38, and the profit of each carton of milk is $0.27.
+
+ * Write a program that does the following:
+ * a. Prompts the user to enter the total amount of milk produced in the morning
+ * b. Outputs the number of milk cartons needed to hold milk (Round your answer to the nearest integer.)
+ * c. Outputs the cost of producing milk
+ * d. Outputs the profit for producing milk
+
+
+ * Algorithm:
+
+ * 1. Declare CartoonSize and get the amount of milk entered by the user.
+ * 2. Declare the variables productCost, costOfProducingMilk, and cartoonsProfits.
+ * 3. Calculation of results.
+ *    a. productCost = cartoonSize divided by 3.78 (floor division) minus 3.
+ *    b. costOfProducingMilk = cartoonSize multiplied by 0.38
+ *    c. cartoonProfits = productCost multiplied by 0.27.
+ *
+ * 4. Convert the resulting decimal number to a two-digit (0.00) decimal number.
+ * 5. Display the result.
+**/
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+    static String pattern = "#,##";
+    static DecimalFormat decimalFormat = new DecimalFormat();
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+
+        //Prompts the user to input amount of milk
+        System.out.print("The total amout of milk (in liters) produced to days is: ");
+        int CartoonSize = sc.nextInt();
+
+        //Calculating the result
+        final int productCost = (int) (Math.floorDiv(CartoonSize, (int) 3.78) - 3);
+        final double costOfProducingMilk = CartoonSize * 0.38;
+        final double cartoonProfits = productCost * 0.27;
+
+        //converting decimal place to (0.00) 2 digit decimal place
+        String format = decimalFormat.format(cartoonProfits);
+
+         //Display the result
+        System.out.println("\n");
+        System.out.println("The number of cartons needed is: " + productCost);
+        System.out.println("The cost of milk is:" + costOfProducingMilk);
+        System.out.println("The profit is:" + format + "\n");
+        System.out.println("Thank you...");
+
+    }
+}
+```
