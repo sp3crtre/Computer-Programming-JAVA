@@ -6,8 +6,6 @@
 
 <p>1. Comparing Answers
 
-by CodeChum Admin
-
 Finally, the exam is over! I think I did quite well, but I’m not very confident with my answer for number 10. I need to verify my answer.
 
 
@@ -45,8 +43,6 @@ public class Main {
 
 <p>2. John's Birthday
 
-by CodeChum Admin
-
 It’s John’s birthday, so Cody decided to buy John a cute little pet. He has to ask John which animal he likes though so have John input either "dog", "cat", or "eagle" then print out his choice.
 
 
@@ -77,8 +73,6 @@ public class Main {
 <hr/>
 
 <p>3. A Meter for Cody
-
-by CodeChum Admin
 
 Cody has n feet worth of wooden sticks. The problem is, Cody wasn’t designed to read measurements done in feet. Cody has to convert this into meters and read it that way instead. One foot is equivalent to 0.305 meters. Print the converted unit.
 
@@ -123,8 +117,6 @@ public class Main {
 <hr/>
 
 <p>4. Cody the Berserk
-
-by CodeChum Admin
 
 Cody had a hard time saving The Programmer from the Hydra, so he decided to call his friends to help him cut off the heads together. This was brilliant because then the number of heads he has to cut would be far less than if he was all alone. For example, if the Hydra had 10 heads and he called 5 friends then they would each cut 2 heads. This presented a problem, however, if the Hydra had 11 heads then that meant one of them had to cut 3 heads.
 
@@ -172,8 +164,6 @@ public class Main {
 <hr/>
 
 1. Midterm_Activity2_No1
-
-by Rozaida Tuazon
 
 Write a program that does the following:
 
@@ -259,8 +249,6 @@ public class Main {
 <hr/>
 
 2. Midterm_Activity2_No2
-
-by Rozaida Tuazon
 
 A milk carton can hold 3.78 liters of milk. Each morning, a dairy farm ships cartons of milk to a local grocery store. The cost of producing one liter of milk is $0.38, and the profit of each carton of milk is $0.27.
 
