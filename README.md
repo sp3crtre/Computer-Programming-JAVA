@@ -403,6 +403,7 @@ class main {
 game. He feels bored and sad now because he can&#39;t play that game. Write a program that could
 automate paper, scissors, and stone so joseph plays himself. Using the reserved keyword &quot;while loop&quot; to
 keep the game running until joseph quits playing.</p>
+
 ```
 import java.util.*;
 
@@ -498,12 +499,15 @@ class main2 {
     
     }
 }
+
 ```
+
 <h2>SWITCH CASE PROBLEM:</h2>
 <p>The class president loves reading bible verses, riddles, quotes, and advice every day, but she is tired of
 getting those books to read, she wants to make an automation that could randomly generate the
 content on his books in the bible, advice, Tagalog riddles and quotes, but she doesn’t know how to that.
 Let’s help our class president to do his task by writing a program that could help her.</p>
+
 ```
 import java.util.Scanner;
 
@@ -612,8 +616,10 @@ class main3
 }
   
 ```
+
 <h2>FOR LOOP PROBLEM:</h2>
 <p>Write a program to print even and odd numbers Using for loop.</p>
+
 ```
 import java.util.Scanner;
 
@@ -647,6 +653,7 @@ class main4 {
     }
 }
 ```
+
 <h2>Nested if Statement PROBLEM:</h2>
 <p>The company owner attempted to log in to the admin panel on the company&#39;s website link was not
 found because of misconfiguration to the website. The company boss tries to communicate with the IT
@@ -657,6 +664,7 @@ portal to the company website, allowing us to log in to our boss to log in to hi
 growth. Assume it is connected to Secure Socket Shell (SSH) using the window command prompt
 terminal as an admin portal and will redirect to the admin dashboard so, our boss would see the
 increasing sales and status.</p>
+
 ```
 import java.util.Scanner;
 
@@ -707,10 +715,12 @@ class main5 {
     }
 }
 ```
+
 <h2>WHILE LOOP PROBLEM:</h2>
 <p>Create a guessing game, give it a name, and use a do-while loop to guess my number. In this game,
 every wrong guess has the potential of 3 lifelines, which reduces the life expectancy and if the life
 exceeds zero it&#39;s game over.</p>
+
 ```
 import java.util.Scanner;
 
