@@ -327,12 +327,12 @@ public class Main {
 <h1>Pre-Finals</h1>
 <p>During the programming final exam, my professor challenged us to create and solve our own problems in order to test our capabilities and to demonstrate that we have learned enough to move on to more advanced programming lessons. I accepted this challenge and worked to solve the problem independently</p>
 
-<p>IF…..ELSE STATEMENT
-PROBLEM:
-Anna forgot to bring a calculator for exam day and didn’t know where she could borrow a calculator and
+<h2>IF…..ELSE STATEMENT PROBLEM:</h2>
+<p>Anna forgot to bring a calculator for exam day and didn’t know where she could borrow a calculator and
 the exam will be after 10 minutes. Write a program arithmetic calculator using Addition (+), Subtraction
 (-), Multiplication (x), and Division (%) using the reversed keyword of java if, else if, and else that will
 calculate the sum of two numbers.</p>
+
 ```
 //Activity 1.1
 //if, else if, else statement
