@@ -322,3 +322,430 @@ public class Main {
     }
 }
 ```
+<hr>
+
+<h1>Pre-Finals</h1>
+
+```
+//Activity 1.1
+//if, else if, else statement
+
+import java.util.Scanner;
+
+class main {
+    static Scanner console =  new Scanner(System.in);
+    static int numb1, numb2, sum, operator;
+
+    public static void main(String[] args) {
+	System.out.println("              ###                 ###");                         
+	System.out.println("              ##                   ##             ##");              
+	System.out.println("              ##                   ##             ##");            
+	System.out.println("  ###   ####  ##   ###    ###  ##  ##     ######  ##   ##  ## ##"); 
+	System.out.println(" #  # ##  ##  ##  ##  #   ##   ##  ##   ##    ##  ##  ##  # ## ");
+	System.out.println("##    ##  ##  ##  ##      ##   ##  ##   ##    ##  ##  ##  ##  ##");
+	System.out.println("##  # ##  ##  ##  ##  #    ## ##   ##   ##    ##  ##  ##  #   ##");
+	System.out.println(" ###   ## ## ###   ###      ###   ####   ## #### ###  ##             "); 
+        System.out.println("[0] Addition ");
+        System.out.println("[1] Subtraction ");
+        System.out.println("[2] Multiplication ");
+        System.out.println("[3] Division ");
+        System.out.println("");
+       
+        //Get the user input 
+        System.out.print("[+]Choose operator you want to use: ");
+        operator = console.nextInt();
+        System.out.print("[+]Input first number: ");
+        numb1 = console.nextInt();
+        System.out.print("[+]Input second number: \u001b[0m");
+        numb2 = console.nextInt();
+
+        //Check if the user input 0 it well adds the two numbers
+        if (operator == 0) {
+            System.out.println("You chose addition");
+            sum = numb1 + numb2;
+            System.out.println("Result: " + sum);
+          
+        //Check if the user input 1 it well subtract the two numbers
+        } else if (operator == 1) {
+            System.out.println("You chose subtraction");
+            sum = numb1 - numb2;    
+            System.out.println("Result: " + sum);
+            
+        //Check if the user input 2 it well multiply the two numbers
+        } else if (operator == 2) {
+            System.out.println("You chose multiplication");
+            sum = numb1 * numb2;
+            System.out.println("Result: " + sum);
+            
+        //Check if the user input 3 it well divide the two numbers
+        } else if (operator == 3) {
+            System.out.println("You chose division");
+            sum = numb1 / numb2;
+            System.out.println("Result: " + sum);
+            
+        } else {
+            System.out.println("You cannot get the sum of 2 number without using operators.");
+            
+        }
+    }
+}
+
+```
+
+```
+import java.util.*;
+
+class main2 {
+    static Scanner console = new Scanner(System.in);
+    static int player;
+    static int computerScore = 0, playerScore = 0;
+
+    public static void main(String[] args) {
+        final String []computer = {
+            "BATO",
+            "GUNTING",
+            "PAPEL"
+            
+        };
+
+        System.out.println("\u001b[32m▄▄▄▄    ▄▄▄     ▄▄▄█████▓ ▒█████  ▒██   ██▒    ██▓███   ██▓ ▄████▄   ██ ▄█▀\u001b[0m");
+        System.out.println("\u001b[32m▓█████▄ ▒████▄   ▓  ██▒ ▓▒▒██▒  ██▒▒▒ █ █ ▒░   ▓██░  ██▒▓██▒▒██▀ ▀█   ██▄█▒\u001b[0m");
+        System.out.println("\u001b[32m▒██▒ ▄██▒██  ▀█▄ ▒ ▓██░ ▒░▒██░  ██▒░░  █   ░   ▓██░ ██▓▒▒██▒▒▓█    ▄ ▓███▄░\u001b[0m");
+        System.out.println("\u001b[32m▒██░█▀  ░██▄▄▄▄██░ ▓██▓ ░ ▒██   ██░ ░ █ █ ▒    ▒██▄█▓▒ ▒░██░▒▓▓▄ ▄██▒▓██ █▄\u001b[0m");
+        System.out.println("\u001b[32m░▓█  ▀█▓ ▓█   ▓██▒ ▒██▒ ░ ░ ████▓▒░▒██▒ ▒██▒   ▒██▒ ░  ░░██░▒ ▓███▀ ░▒██▒ █▄\u001b[0m");
+        System.out.println("\u001b[32m░▒▓███▀▒ ▒▒   ▓▒█░ ▒ ░░   ░ ▒░▒░▒░ ▒▒ ░ ░▓ ░   ▒▓▒░ ░  ░░▓  ░ ░▒ ▒  ░▒ ▒▒ ▓▒\u001b[0m");
+        System.out.println("\u001b[32m▒░▒   ░   ▒   ▒▒ ░   ░      ░ ▒ ▒░ ░░   ░▒ ░   ░▒ ░      ▒ ░  ░  ▒   ░ ░▒ ▒░\u001b[0m");
+        System.out.println("\u001b[32m ░    ░   ░   ▒    ░      ░ ░ ░ ▒   ░    ░     ░░        ▒ ░░        ░ ░░ ░ \u001b[0m");
+        System.out.println("\u001b[32m ░            ░  ░            ░ ░   ░    ░               ░  ░ ░      ░  ░   \u001b[0m");
+        System.out.println("\u001b[32m      ░                                                     ░               \u001b[0m");
+        System.out.println("\u001b[34mCoded by: Kaizer Andri Baynosa");
+        System.out.println("");
+        System.out.println("[0] Bato ");
+        System.out.println("[1] Gunting ");
+        System.out.println("[2] Papel ");
+        System.out.println("[3] Exit");
+         
+        //Utilizing a while to  keep the game running
+        while (true) {
+            
+            //Pick a weapon at random from the ArrayList from computer weapon
+            java.util.Random random = new java.util.Random();
+            int randomComputerWeapon = random.nextInt(computer.length);
+            
+            //Get the player-chosen weapon
+            System.out.print("choose your weapon: ");
+            player = console.nextInt();
+            
+            //Check if the player's chosen weapon is equal to the computer weapon that was a random choice by the computer
+            if (player == randomComputerWeapon) {
+                System.out.println("Tie!");
+             
+            //Check if the player has chosen BATO as a weapon and check if the computer has chosen PAPEL as a weapon, the condition is true
+            } else if ((player == 0) && (randomComputerWeapon == 2)) {
+                System.out.println("Computer wins!");
+                computerScore++;
+    
+            //Check if the player has chosen BATO as a weapon and check if the computer has chosen GUNTING as a weapon, the condition is true
+            } else if ((player == 0) && (randomComputerWeapon == 1)) {
+                System.out.println("Player wins!");
+                playerScore++;
+    
+            //Check if the player has chosen PAPEL as a weapon and check if the computer has chosen BATO as a weapon, the condition is true
+            } else if ((player == 2) && (randomComputerWeapon == 0)) {
+                System.out.println("Player wins!");
+                playerScore++;
+    
+            //Check if the player has chosen GUNTING as a weapon and check if the computer has chosen PAPEL as a weapon, the condition is true
+            } else if ((player == 1) && (randomComputerWeapon == 2)) {
+                System.out.println("Player wins!");
+                playerScore++;
+    
+            //Check if the player has chosen GUNTING as a weapon and check if the computer has chosen BATO as a weapon, the condition is true
+            } else if ((player == 1) && (randomComputerWeapon == 0)) {
+                System.out.println("Computer wins!");
+                computerScore++;
+    
+            //Check if the player has chosen PAPEL as a weapon and check if the computer has chosen GUNTING as a weapon, the condition is true
+            } else if ((player == 2) && (randomComputerWeapon == 1)) {
+                System.out.println("Computer wins!");
+                computerScore++;
+
+            //check if the player chosen 3 the game would stop    
+            } else if (player == 3) {
+                break;
+
+            //Check if the player inputs not in the provided category are print a message
+            } else {
+                System.out.println("please choose you weapon");
+                
+            }
+        }
+
+        System.out.println("____________________________________________\nScore board");
+        System.out.println("Player Score: " + playerScore);
+        System.out.println("Computer Score: " + computerScore);
+    
+    }
+}
+```
+
+```
+import java.util.Scanner;
+
+class main3 
+{
+    static Scanner console = new Scanner(System.in);
+    static String result;
+    public static void main(String[] args)
+    {
+        //The four ArrayList below stored random value
+
+        final String []advices = {
+            "Your life is your responsibility. \n\nThere is one person and one person alone over whom you have control in this life—and that is yourself. \nSince you are the only person you can control, you are the only person who can take responsibility for your life. \nThat includes your energy, your happiness, your fulfillment, your career, your choices and more. \nYou are responsible for you and you alone. You are not responsible for anyone else. \nHow could you be? It is their responsibility to take care of themselves. \nYes, you can and should support someone in making good choices, building a life that makes them happy, and taking care of themselves. \nIn fact, taking responsibility for your own well-being is precisely how we are better able to be present for those around us. \nJust remember: Support and responsibility are two extremely different approaches. \nYou take responsibility for yourself. you support other people. Do your best not to reverse or mix up the two.",
+
+            "The way someone treats you is a reflection of how they feel about themselves. \n\nThat cross look? Not about you. That snide comment? Not about you. That temper tantrum? Not about you. \nThe way a person behaves indicates where they’re at physically, mentally, and spiritually. \nTry not to take things personally. They probably have nothing to do with you. Learn to see someone’s behavior through the lens of love. \nIf they’re acting out, that probably means they’re in desperate need of a love tank fill-up. \nDo not react when someone acts out. Ask her if she’s okay. Inquire about what’s going on in his life. \nRemain open and curious and compassionate. You know that’s exactly what you’ll want when your cup of love runs low, too. \nAnd you know it eventually will.",
+
+            "Life is all about managing expectations—most of all your own. \n\nThe world will expect many things from you. And you will expect many things in return. \nThe key is to manage its expectations of you—and yours of it. \nGoing through life trying to live up to someone else’s expectations of you is how you end up disappointing both of you in the process. \nConversely, trying to force the world to meet your expectations is like trying to make Niagara Falls flow backwards. \nIt just doesn’t work that way. There is another way, and it’s through finding harmony between your expectations and reality. \nAccording to Manel Baucells and Rakesh Sarin, authors of Engineering Happiness: A New Approach for Building a Joyful Life, \nthere is even a formula for happiness that takes into account this harmony. The formula is as follows: Happiness equals reality minus shifting expectations. \nThus, you’ll be happy as long your shifting expectations are lower than reality. When you feel your energy or happiness slipping, focus on softening your expectations a bit. \nYou’ll be better off not just in the moment but in the long run, too."
+        
+        };
+        
+        final String []quote = {
+            "The greatest glory in living lies not in never falling, but in rising every time we fall. \n\n~Nelson Mandela",
+
+            "The way to get started is to quit talking and begin doing. \n\n~Walt Disney",
+            
+            "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. \n\n~Steve Jobs",
+
+            "If life were predictable it would cease to be life, and be without flavor. \n\n~Eleanor Roosevelt"
+            
+        };
+
+        final String []bible = {
+            "\u001b[43mThessalonians 2:11-12\u001b[0m“For you know that we dealt with each of you as a father deals with his own children, encouraging, comforting and urging you to live lives worthy of God, who calls you into his kingdom and glory.”",
+
+            "\u001b[43mMark 10:27\u001b[0m“Jesus looked at them and said, ‘With man this is impossible, but not with God; all things are possible with God.’”",
+            
+            "\u001b[43mPhilippians 1:6\u001b[0m“…being confident of this, that he who began a good work in you will carry it on to completion until the day of Christ Jesus.”",
+            
+            "\u001b[43mPsalm 37:23-24\u001b[0m“The LORD makes firm the steps of the one who delights in him; though he may stumble, he will not fall, for the LORD upholds him with his hand.”"
+        };
+
+        final String []bugtong = {
+            "Sa araw nahihimbing, sa gabi ay gising. \n\nAnswer: Paniki",
+
+            "Matanda na ang nuno hindi pa naliligo. \n\nAnswer: Pusa",
+
+            "Aling bahagi ng katawan ang di naaabot ng kanang kamay? \n\nAnswer: Kanang Siko",
+            
+            "Kay liit pa ni Neneng marunong nang kumendeng. \n\nAnswer: Bibe",
+
+        };
+        
+        System.out.println("\u001b[34m  ▐▄▄▄ ▄▄▄· ▄▄▄   ▌ ▐·▪  .▄▄ ·\u001b[34m");
+        System.out.println("\u001b[34m   ·██▐█ ▀█ ▀▄ █·▪█·█▌██ ▐█ ▀. \u001b[34m");
+        System.out.println("\u001b[34m ▪▄ ██▄█▀▀█ ▐▀▀▄ ▐█▐█•▐█·▄▀▀▀█▄\u001b[34m");
+        System.out.println("\u001b[34m  ▐▌▐█▌▐█ ▪▐▌▐█•█▌ ███ ▐█▌▐█▄▪▐█\u001b[34m");
+        System.out.println("\u001b[34m   ▀▀▀• ▀  ▀ .▀  ▀. ▀  ▀▀▀ ▀▀▀▀ \u001b[0m");
+        System.out.println("Words generator");
+        System.out.println("Usage:");
+        System.out.println("[0] Advice");
+        System.out.println("[1] Quote");
+        System.out.println("[2] Bible");
+        System.out.println("[3] Bugtong");
+ 
+        //Get the user input
+        System.out.print(">>>> ");
+        int usage = console.nextInt();
+
+        switch (usage)
+
+        {   //Check if the user chosen 0 it will randomly chose a piece of advice on ArrayList
+            case 0:
+                java.util.Random random = new java.util.Random();
+                int randomAdvice = random.nextInt(advices.length);
+                System.out.println(advices[randomAdvice]);
+                break;
+             
+            //Check if the user chosen 1 it will randomly chose a piece of quote on ArrayList
+            case 1:
+                java.util.Random random2 = new java.util.Random();
+                int randomQuote = random2.nextInt(quote.length);
+                System.out.println(quote[randomQuote]);
+                break;
+              
+            //Check if the user chosen 2 it will randomly chose a piece of bible on ArrayList
+            case 2:
+                java.util.Random random3 = new java.util.Random();
+                int randomBible = random3.nextInt(bible.length);
+                System.out.println(bible[randomBible]);
+                break;
+
+            //Check if the user chosen 3 it will randomly chose a piece of bugtong on ArrayList     
+            case 3:
+                java.util.Random random4 = new java.util.Random();
+                int randomBugtong = random4.nextInt(advices.length);
+                System.out.println(bugtong[randomBugtong]);
+                break;
+            
+            //Check if the user inputs not in the provided category are print a message 
+            default:
+                System.out.println("please use the matching number as your basis of choice.");
+                break;
+
+        }
+    }
+}
+  
+```
+
+```
+import java.util.Scanner;
+
+class main4 {
+    static int i, number;
+    static Scanner console = new Scanner(System.in);
+    public static void main(String[] args) {
+        System.out.println(" _______ _____ ______ ______      ______  _     _ ______ ______");     
+        System.out.println(" |______   |    ____/  ____/      |_____] |     |  ____/  ____/");     
+        System.out.println(" |       __|__ /_____ /_____      |_____] |_____| /_____ /_____");
+        
+        //Get the user input number 
+        System.out.print("input any numbers: ");
+        number = console.nextInt();
+       
+        //It will loop depending on  the number input by the user until reaching the number limit
+        for (i = 0; i <= number; i++) {
+            
+            //Divide the incremented value by number 2 and check if the result equal to zero
+            //Check if the number is even
+            if ((i % 2) == 0) {
+                System.out.println("The number " + i + " is even number");
+            
+            //check if the number is odd
+            } else {
+                System.out.println("The number " + i + " is odd number");
+                
+            }
+    
+        }
+    }
+}
+```
+
+```
+import java.util.Scanner;
+
+class main5 {
+    static Scanner console = new Scanner(System.in);
+    static String email, password, secretKey;
+    public static void main(String[] args) {
+        System.out.println("\u001b[31m  ▄▄▄· ·▄▄▄▄  • ▌ ▄ ·. ▪   ▐ ▄      ▄▄▄· ▄▄▄·  ▐ ▄ ▄▄▄ .▄▄▌\u001b[0m"); 
+        System.out.println("\u001b[31m ▐█ ▀█ ██▪ ██ ·██ ▐███▪██ •█▌▐█    ▐█ ▄█▐█ ▀█ •█▌▐█▀▄.▀·██•\u001b[0m");  
+        System.out.println("\u001b[31m ▄█▀▀█ ▐█· ▐█▌▐█ ▌▐▌▐█·▐█·▐█▐▐▌     ██▀·▄█▀▀█ ▐█▐▐▌▐▀▀▪▄██▪\u001b[0m");  
+        System.out.println("\u001b[31m ▐█ ▪▐▌██. ██ ██ ██▌▐█▌▐█▌██▐█▌    ▐█▪·•▐█ ▪▐▌██▐█▌▐█▄▄▌▐█▌▐▌\u001b[0m");
+        System.out.println("\u001b[31m  ▀  ▀ ▀▀▀▀▀• ▀▀  █▪▀▀▀▀▀▀▀▀ █▪    .▀    ▀  ▀ ▀▀ █▪ ▀▀▀ .▀▀▀ \u001b[0m");
+        
+        //Get the user input credentials
+        System.out.print("Email: ");	
+        email = console.next();
+
+        System.out.print("Password: ");
+        password = console.next();
+
+        System.out.print("Enter your secret KEY to proceed: ");
+        secretKey = console.next();
+      
+        //Check if the user email exists on the database
+        if (email.equals("admin")) {
+
+            //Check if the user password is correct
+            if (password.equals("password1234")) {
+
+                //Check if the user input correct secret key
+                if (secretKey.equals("K912@C21")) {
+                    System.out.println("\u001b[32mWelcome to the administrator\u001b[0m");
+
+                } else {
+                    System.out.println("\u001b[33mYou cant not login please input the correct secret key\u001b[0m");
+
+                }
+
+            } else {
+                System.out.println("\u001b[33mYou input incorrect password\u001b[0m");
+
+            }
+    
+        } else {
+            System.out.println("\u001b[33mCredentials not exist do you an acount?\u001b[0m");
+        
+        }
+    }
+}
+```
+
+```
+import java.util.Scanner;
+
+class main6 {
+    static int playerScore, guess, life = 3;
+    
+    //Generate a random number using pseudorandom and convert it to the decimal number
+    static int answer = (int) ((Math.random() * 10) + 1);
+    static String name, playAgain;
+    static Scanner console = new Scanner(System.in);
+    public static void main(String[] args) {
+        System.out.println("\u001b[32mLet's play a game i called it, guess my number\u001b[32m");
+        System.out.println("\u001b[32m .88888.                                                                         \u001b[0m"); 
+        System.out.println("\u001b[32md8'   `88                                                                dP dP   \u001b[0m"); 
+        System.out.println("\u001b[32m88        dP    dP .d8888b. .d8888b. .d8888b.    88d8b.d8b. dP    dP    8888888  \u001b[0m"); 
+        System.out.println("\u001b[32m88   YP88 88    88 88ooood8 Y8ooooo. Y8ooooo.    88'`88'`88 88    88     88 88   \u001b[0m"); 
+        System.out.println("\u001b[32mY8.   .88 88.  .88 88.  ...       88       88    88  88  88 88.  .88    8888888  \u001b[0m"); 
+        System.out.println("\u001b[32m `88888'  `88888P' `88888P' `88888P' `88888P'    dP  dP  dP `8888P88     dP dP   \u001b[0m"); 
+        System.out.println("\u001b[32m                                                                 .88             \u001b[0m"); 
+        System.out.println("\u001b[32m                                                             d8888P              \u001b[0m"); 
+        System.out.println("Rules:Please enter a number between 1 and 10; you have three chances;\neach incorrect guess reduces your life expectancy.\n");
+        System.out.println("Coded by: Kaizer Andri Baynosa");
+        System.out.print("What is your name: ");
+        name = console.next();
+        System.out.println(answer);
+        
+        //If the condition is true it will ask you repeatedly to enter your guess
+        do {
+            System.out.print("Enter your guess: ");
+            guess = console.nextInt();
+           
+            //Check if the user input number less than zero or greater than 10
+            if ((guess <= 0) || (guess >= 10)) {
+                System.out.println("you input number not between 1 and 10");
+                life--;
+   
+            //Check if the user input number is equal to answer
+            } else if (guess == answer) {
+                System.out.println(guess + " is the correct answer. you win!");
+    
+                //Prompt a msg to if player want to play again
+                System.out.print("Do want to play again(y/n): ");
+                playAgain = console.next();
+
+                //Check if the user input n the program will stop
+                if (playAgain == "n") {
+                    life = 0; 
+                  
+                }
+
+            } else {
+                life--;
+                System.out.println("Keep guessing");
+                System.out.println("You have only " + life + " life remaining\n");
+
+            }
+
+        //if the life span is greater than 0 the condition is true
+        } while(life > 0);
+        System.out.println(name + " thank you for participating in my game.");
+    }
+}
+```
+
+
+
