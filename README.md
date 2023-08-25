@@ -24,7 +24,7 @@ Sample Output
 Enter your answer for number 10: A
 Oh, my answer is A as well</p>
 
-```
+```java
 import java.util.*;
 
 public class Main {
@@ -56,7 +56,7 @@ Sample Output
 Enter the animal John likes: dog
 dog</p>
 
-```
+```java
 import java.util.Scanner;
 
 public class Main {
@@ -93,7 +93,7 @@ Equivalent meters = 1.98
 
 Score: 13/13</p>
 
-```
+```java
 import java.util.*;
 import java.text.*;
 
@@ -141,7 +141,7 @@ Minimum heads to cut per friend = 3
 Score: 12/12
 </p>
 
-```
+```java
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -177,7 +177,7 @@ d. Adds the five integers
 
 e. Prints the sum and average of the five integers
 
-```
+```java
 /**
  * Write a program that does the following:
  * a. Prompts the user to input five decimal numbers
@@ -263,7 +263,7 @@ c. Outputs the cost of producing milk
 d. Outputs the profit for producing milk
 
 
-```
+```java
 /**
  * A milk carton can hold 3.78 liters of milk. Each morning, a dairy farm ships cartons of milk to a local grocery store. 
  * The cost of producing one liter of milk is $0.38, and the profit of each carton of milk is $0.27.
@@ -333,7 +333,7 @@ the exam will be after 10 minutes. Write a program arithmetic calculator using A
 (-), Multiplication (x), and Division (%) using the reversed keyword of java if, else if, and else that will
 calculate the sum of two numbers.</p>
 
-```
+```java
 //Activity 1.1
 //if, else if, else statement
 
@@ -404,7 +404,7 @@ game. He feels bored and sad now because he can&#39;t play that game. Write a pr
 automate paper, scissors, and stone so joseph plays himself. Using the reserved keyword &quot;while loop&quot; to
 keep the game running until joseph quits playing.</p>
 
-```
+```java
 import java.util.*;
 
 class main2 {
@@ -508,7 +508,7 @@ getting those books to read, she wants to make an automation that could randomly
 content on his books in the bible, advice, Tagalog riddles and quotes, but she doesn’t know how to that.
 Let’s help our class president to do his task by writing a program that could help her.</p>
 
-```
+```java
 import java.util.Scanner;
 
 class main3 
@@ -620,7 +620,7 @@ class main3
 <h2>FOR LOOP PROBLEM:</h2>
 <p>Write a program to print even and odd numbers Using for loop.</p>
 
-```
+```java
 import java.util.Scanner;
 
 class main4 {
@@ -665,7 +665,7 @@ growth. Assume it is connected to Secure Socket Shell (SSH) using the window co
 terminal as an admin portal and will redirect to the admin dashboard so, our boss would see the
 increasing sales and status.</p>
 
-```
+```java
 import java.util.Scanner;
 
 class main5 {
@@ -721,7 +721,7 @@ class main5 {
 every wrong guess has the potential of 3 lifelines, which reduces the life expectancy and if the life
 exceeds zero it&#39;s game over.</p>
 
-```
+```java
 import java.util.Scanner;
 
 class main6 {
